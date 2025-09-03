@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-sm text-muted-foreground">
-            © 2024 Portfolio. All rights reserved.
+            © 2025 Portfolio. All rights reserved.
           </div>
           
           <div className="text-sm text-muted-foreground">
