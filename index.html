@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/testimonials.css">
     <link rel="stylesheet" href="styles/responsive.css">
     
     <!-- Fonts -->
@@ -44,6 +46,8 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
                 <li>
@@ -85,7 +89,7 @@
                 <span class="hero-label animate-fade-up">Welcome to my portfolio</span>
                 <h1 class="hero-title animate-fade-up delay-1">
                     <span class="text-gradient">Creative</span> Designer
-                    <br>& <span class="typewriter" data-words='["User Experience", "Innovator", "Problem Solver"]'></span>
+                    <br>& <span class="typewriter" data-words='["UX Designer", "Innovator", "Problem Solver"]'></span>
                 </h1>
                 <p class="hero-description animate-fade-up delay-2">
                     Crafting exceptional digital experiences with modern web technologies.
@@ -137,34 +141,6 @@
                 </p>
             </div>
             
-            <!-- Filter Controls -->
-            <div class="filter-controls animate-on-scroll">
-                <button class="filter-btn active" data-filter="all">
-                    All <span class="filter-count">20</span>
-                </button>
-                <button class="filter-btn" data-filter="web">
-                    Web Dev <span class="filter-count">8</span>
-                </button>
-                <button class="filter-btn" data-filter="mobile">
-                    Mobile <span class="filter-count">5</span>
-                </button>
-                <button class="filter-btn" data-filter="ui-ux">
-                    UI/UX <span class="filter-count">4</span>
-                </button>
-                <button class="filter-btn" data-filter="saas">
-                    SaaS <span class="filter-count">3</span>
-                </button>
-            </div>
-            
-            <!-- Search Bar -->
-            <div class="search-container animate-on-scroll">
-                <input type="text" class="search-input" placeholder="Search projects...">
-                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"/>
-                    <path d="m21 21-4.35-4.35"/>
-                </svg>
-            </div>
-            
             <!-- Projects Grid -->
             <div class="projects-grid" id="projects-container">
                 <!-- Projects will be dynamically loaded here -->
@@ -173,6 +149,136 @@
             <!-- Pagination -->
             <div class="pagination" id="pagination">
                 <!-- Pagination will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                Technical <span class="gradient-text">Skills</span>
+            </h2>
+            <p class="section-subtitle">
+                Technologies I work with to build amazing products
+            </p>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>Frontend</h3>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="95"></div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Next.js</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>Backend</h3>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="85"></div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>UI/UX Design</h3>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="90"></div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Tailwind</span>
+                        <span class="skill-tag">Framer</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>DevOps</h3>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="75"></div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">
+                Client <span class="gradient-text">Testimonials</span>
+            </h2>
+            <p class="section-subtitle">
+                What clients say about working with me
+            </p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Diego transformed our vision into reality. His attention to detail and technical expertise made our project a huge success."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SK</div>
+                        <div>
+                            <div class="author-name">Sarah Kim</div>
+                            <div class="author-role">CEO at TechVentures</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Exceptional work! The website exceeded our expectations in both design and functionality. Highly recommended!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div>
+                            <div class="author-name">Michael Johnson</div>
+                            <div class="author-role">Founder at StartupHub</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Working with Diego was a game-changer. He delivered on time, on budget, and with incredible quality."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EC</div>
+                        <div>
+                            <div class="author-name">Emily Chen</div>
+                            <div class="author-role">Product Manager at InnovateCo</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -263,36 +369,6 @@
             </div>
             
             <div class="contact-content">
-                <form class="contact-form animate-on-scroll" id="contact-form">
-                    <div class="form-group">
-                        <input type="text" class="form-input" id="name" required>
-                        <label for="name" class="form-label">Your Name</label>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="email" class="form-input" id="email" required>
-                        <label for="email" class="form-label">Email Address</label>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="text" class="form-input" id="subject">
-                        <label for="subject" class="form-label">Subject</label>
-                    </div>
-                    
-                    <div class="form-group">
-                        <textarea class="form-input" id="message" rows="5" required></textarea>
-                        <label for="message" class="form-label">Message</label>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary btn-submit magnetic-btn">
-                        <span>Send Message</span>
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="22" y1="2" x2="11" y2="13"/>
-                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-                        </svg>
-                    </button>
-                </form>
-                
                 <div class="contact-info animate-on-scroll">
                     <div class="info-item">
                         <div class="info-icon">
@@ -371,6 +447,7 @@
     <script src="js/projects.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/hero.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/testimonials.js"></script>
 </body>
 </html>
